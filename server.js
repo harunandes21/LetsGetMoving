@@ -20,14 +20,15 @@ app.post('/api/contact', async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'tucsonletsgetmoving@gmail.com',
-                pass: 'rsklyxddvscdiwol'
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
             }
+
         });
 
         const mailOptions = {
-            from: email,
-            to: 'tucsonletsgetmoving@gmail.com',
+            from: process.env.EMAIL_USER,
+            to: 'info@tucsonletsgetmoving.com',
             subject: `Let's Get Moving Contact Form - ${pnumber}`,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${pnumber}\n\nPreferred Move Date: ${moveDate} \nMessage:\n${message}`
         };
