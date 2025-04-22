@@ -27,9 +27,8 @@ app.post('/api/contact', async (req, res) => {
 
         const mailOptions = {
             from: email,
-            to: 'tucsonletsgetmoving@gmail.com',
+            to: 'info@tucsonletsgetmoving.com',
             subject: `Let's Get Moving Contact Form - ${pnumber}`,
-            replyTo: email,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${pnumber}\n\nPreferred Move Date: ${moveDate} \nMessage:\n${message}`
         };
 
