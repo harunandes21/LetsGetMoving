@@ -1517,21 +1517,39 @@
 
         const data = await response.json();
         if (data.success) {
-          alert("✅ Message sent!");
+          showToast();
           form.reset();
         } else {
-          alert("❌ Failed to send message.");
+          showErrorToast();
         }
       } catch (err) {
         console.error("❌ Error:", err);
-        alert("❌ Something went wrong.");
+        showErrorToast();
       }
+      function showToast() {
+        const toast = document.getElementById('formToast');
+        toast.style.display = 'flex';
+        setTimeout(() => {
+          toast.style.display = 'none';
+        }, 4000);
+      }
+
+      function showErrorToast() {
+        const toast = document.getElementById('formToastError');
+        toast.style.display = 'flex';
+        setTimeout(() => {
+          toast.style.display = 'none';
+        }, 5000);
+      }
+
     });
   });
 </script>
 
+
+
 <!-- Success Toast -->
-<div id="formToast" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999; display: none;">
+<div id="formToast" class="toast-container position-fixed top-50 start-50 translate-middle" style="z-index: 9999; display: none;">
   <div class="toast align-items-center text-white bg-success border-0 show" role="alert">
     <div class="d-flex">
       <div class="toast-body">
@@ -1543,7 +1561,7 @@
 </div>
 
 <!-- Error Toast -->
-<div id="formToastError" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999; display: none;">
+<div id="formToastError" class="toast-container position-fixed top-50 start-50 translate-middle" style="z-index: 9999; display: none;">
   <div class="toast align-items-center text-white bg-danger border-0 show" role="alert">
     <div class="d-flex">
       <div class="toast-body">
@@ -1553,6 +1571,7 @@
     </div>
   </div>
 </div>
+
 
 </body>
 </html>
