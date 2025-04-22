@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Get Moving | Professional Movers in Tucson, AZ</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="title" content="Let's Get Moving | Professional Movers in Tucson, AZ">
+  <meta name="description" content="Let's Get Moving offers fast, affordable, and professional moving services in Tucson and surrounding areas. Local or long-distance, we've got you covered.">
+  <meta name="keywords" content="Tucson moving company, movers Tucson, moving services Tucson, local movers Tucson, affordable movers Arizona, best moving company Tucson">
+  <meta name="author" content="Let's Get Moving">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://letsgetmoving.com" />
+  <meta property="og:title" content="Let's Get Moving | Professional Movers in Tucson, AZ" />
+  <meta property="og:description" content="Moving in Tucson? Let's Get Moving provides professional and friendly moving help at prices you can afford. Call now!" />
+  <meta property="og:image" content="https://letsgetmoving.com/images/greenLogo.png" />
+
+  <meta property="og:site_name" content="Let's Get Moving" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://letsgetmoving.com" />
+  <meta name="twitter:title" content="Let's Get Moving | Professional Movers in Tucson, AZ" />
+  <meta name="twitter:description" content="Professional moving services in Tucson — fast, affordable, and always ready." />
+  <meta name="twitter:image" content="https://letsgetmoving.com/images/greenLogo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    :root {
+      --primary: #2c4f3d;
+      --primary-dark: #1f382d;
+      --primary-light: #4e7c61;
+      --secondary: #a8c686;
+      --secondary-light: #cde4b0;
+      --dark: #1a1a1a;
+      --light: #ffffff;
+      --light-gray: #f5f5f5;
+      --accent: #8bc34a;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fff;
+      color: #333;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR STYLING ===== */
+    .navbar {
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-shrink {
+      padding: 8px 0;
+    }
+
+    .navbar-brand {
+      font-weight: 800;
+      color: var(--primary) !important;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: auto;
+      max-height: 50px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: var(--primary);
+    }
+
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+      width: 30px;
+    }
+
+    .navbar-toggler {
+      border: none;
+      padding: 0;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 123, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* ===== BUTTON STYLING ===== */
+    .btn-primary {
+      background-color: var(--accent);
+      border: none;
+      color: white;
+      font-weight: 700;
+      padding: 12px 25px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(139, 195, 74, 0.3);
+    }
+
+    .btn-primary:hover {
+      background-color: #76b244;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(139, 195, 74, 0.4);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      font-weight: 700;
+      padding: 10px 25px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255, 123, 0, 0.3);
+    }
+
+    .btn-secondary {
+      background-color: var(--secondary);
+      border: none;
+      color: white;
+      font-weight: 700;
+      padding: 10px 25px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(44, 79, 61, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--secondary-light);
+      transform: translateY(-3px);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('images/hero.png') no-repeat center center;
+      background-size: cover;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #fff;
+      clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      color: #f8f8f8;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: 65vh;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    /* ===== FEATURES STRIPE ===== */
+    .features-stripe {
+      background-color: var(--primary);
+      padding: 1.5rem 0;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      position: relative;
+    }
+
+    .features-stripe .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-item i {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    /* ===== SECTION STYLING ===== */
+    section {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+      font-weight: 800;
+      color: var(--dark);
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 10px;
+    }
+
+    .section-title span {
+      color: var(--accent);
+    }
+
+    .section-subtitle {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #666;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== SERVICES SECTION ===== */
+    .services-section {
+      background: var(--light-gray);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-section::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #fff;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+    }
+
+    .services-section::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #fff;
+      clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      height: 100%;
+      position: relative;
+      border-bottom: 5px solid var(--accent);
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .service-card h5 {
+      color: var(--dark);
+      font-weight: 700;
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .service-card h5::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .service-card p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .service-card .card-content {
+      padding: 25px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-card:hover .service-icon {
+      color: var(--accent);
+    }
+
+    /* ===== WHY CHOOSE US SECTION ===== */
+    .why-choose-section {
+      background: white;
+      padding: 7rem 0;
+    }
+
+    .why-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .why-item:hover {
+      background: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transform: translateY(-5px);
+    }
+
+    .why-icon {
+      background: var(--accent);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-right: 20px;
+      flex-shrink: 0;
+      box-shadow: 0 5px 15px rgba(255, 123, 0, 0.2);
+    }
+
+    .why-content h5 {
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .why-content p {
+      color: #666;
+      margin-bottom: 0;
+    }
+
+    .about-img {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+      height: 100%;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ===== PROCESS SECTION ===== */
+    .process-section {
+      background: var(--primary);
+      color: white;
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process-section::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: white;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+    }
+
+    .process-section::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: white;
+      clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+    }
+
+    .process-section .section-title {
+      color: white;
+    }
+    .process-section .section-title span {
+      color: var(--accent);
+    }
+
+
+    .process-section .section-title::after {
+      background: var(--accent);
+    }
+
+    .process-section .section-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .process-item {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .process-number {
+      background: var(--accent);
+      color: var(--dark);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 auto 20px;
+      position: relative;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .process-item h5 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .process-item p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* ===== TESTIMONIALS SECTION ===== */
+    .testimonial-section {
+      background: white;
+      padding: 6rem 0;
+    }
+
+    .testimonial-card {
+      background: #f9f9f9;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      position: relative;
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    }
+
+
+
+    .testimonial-content {
+      margin-bottom: 20px;
+      color: #555;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+
+
+
+    .testimonial-name {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-name strong {
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .testimonial-name span {
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-rating {
+      color: var(--accent);
+      margin-top: 5px;
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero.png') no-repeat center center;
+      background-size: cover;
+      padding: 5rem 0;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: white;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+    }
+
+    .cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+      background: var(--light-gray);
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-section::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: white;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+    }
+
+    .contact-info i {
+      color: var(--accent);
+      font-size: 24px;
+      margin-right: 15px;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-form .form-control {
+      border: 1px solid #e0e0e0;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: none;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(255, 123, 0, 0.1);
+    }
+
+    .contact-form textarea.form-control {
+      height: 150px;
+    }
+
+    .contact-form .form-label {
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark);
+      color: #ccc;
+      padding-top: 4rem;
+    }
+
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .footer-logo span {
+      color: var(--primary);
+    }
+
+    .footer-text {
+      margin-bottom: 30px;
+      color: #aaa;
+    }
+
+    .footer-title {
+      color: white;
+      font-weight: 700;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    .footer-link {
+      display: block;
+      color: #aaa;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: var(--primary);
+      transform: translateX(5px);
+    }
+
+    .footer-contact {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .footer-contact i {
+      color: var(--accent);
+      font-size: 18px;
+      margin-right: 15px;
+      width: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .footer-bottom {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px 0;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin-bottom: 0;
+      color: #999;
+    }
+
+    /* ===== ANIMATIONS & UTILITIES ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Call Button */
+    .sticky-call {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      width: 60px;
+      height: 60px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      box-shadow: 0 5px 20px rgba(255, 123, 0, 0.4);
+      cursor: pointer;
+      z-index: 99;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .sticky-call:hover {
+      transform: scale(1.1);
+      background: #76b244;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(139, 195, 74, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 15px rgba(139, 195, 74, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(139, 195, 74, 0);
+      }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .cta-section h2 {
+        font-size: 2.2rem;
+      }
+
+      .process-item {
+        margin-bottom: 40px;
+      }
+
+      .why-choose-section .col-lg-6:last-child {
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 4rem 0;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .cta-section h2 {
+        font-size: 2rem;
+      }
+
+      .feature-item {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .sticky-call {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 20px;
+        bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/greenLogo.png" alt="Let's Get Moving Logo" height="65">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#why-us">Why Choose Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#process">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <a href="tel:5205551234" class="btn btn-primary ms-lg-4">Call Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container hero-content text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 animate__animated animate__fadeIn">
+        <h1>Your Trusted Moving Partner in Tucson</h1>
+        <p>Professional, stress-free moving services in Tucson and surrounding cities.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Stripe -->
+<div class="features-stripe">
+  <div class="container">
+    <div class="feature-item">
+      <i class="fas fa-check-circle"></i>
+      <span>Licensed & Insured</span>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-thumbs-up"></i>
+      <span>BBB Accredited</span>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-user-clock"></i>
+      <span>10+ Years of Experience</span>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Locally Owned</span>
+    </div>
+  </div>
+</div>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="section-title">Our <span>Services</span></h2>
+    <p class="section-subtitle">We offer comprehensive moving solutions tailored to your specific needs.</p>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card fade-in">
+          <div class="card-content">
+            <i class="fas fa-home service-icon"></i>
+            <h5>Local Moving</h5>
+            <p>Whether you're moving across town or to a neighboring city, our local moving services ensure your belongings arrive safely and on time.</p>
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card fade-in">
+          <div class="card-content">
+            <i class="fas fa-route service-icon"></i>
+            <h5>Long Distance Moving</h5>
+            <p>Our experienced team handles long-distance relocations with the same care and professionalism as local moves.</p>
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card fade-in">
+          <div class="card-content">
+            <i class="fas fa-building service-icon"></i>
+            <h5>Commercial Moving</h5>
+            <p>Minimize downtime with our efficient commercial moving services designed for businesses of all sizes.</p>
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card fade-in">
+          <div class="card-content">
+            <i class="fas fa-lock service-icon"></i>
+            <h5>Safe Moving</h5>
+            <p>We specialize in moving gun safes, money safes, and other large secure containers safely and professionally.</p>
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card fade-in">
+          <div class="card-content">
+            <i class="fas fa-truck-loading service-icon"></i>
+            <h5>Loading & Unloading</h5>
+            <p>Need help with just the heavy lifting? Our team can load and unload your rental truck or storage unit.</p>
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="service-card fade-in">
+          <div class="card-content">
+            <i class="fas fa-warehouse service-icon"></i>
+            <h5>Storage Solutions</h5>
+            <p>We offer secure short and long-term storage options for your belongings during transition periods.</p>
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="why-us" class="why-choose-section">
+  <div class="container">
+    <h2 class="section-title">Why Choose <span>Us</span></h2>
+    <p class="section-subtitle">
+      We take pride in being Tucson's most trusted moving company. Here's what sets us apart from the competition:
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+
+
+        <div class="why-item fade-in">
+          <div class="why-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <div class="why-content">
+            <h5>Experienced Professionals</h5>
+            <p>Our team consists of trained, background-checked movers with years of experience handling all types of relocations.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="why-content">
+            <h5>Fully Insured & Licensed</h5>
+            <p>We're fully licensed and insured, giving you peace of mind that your belongings are protected throughout the move.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon">
+            <i class="fas fa-piggy-bank"></i>
+          </div>
+          <div class="why-content">
+            <h5>Transparent Pricing</h5>
+            <p>No hidden fees or surprises. We provide upfront, honest quotes and stick to them.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="why-content">
+            <h5>Reliable & Punctual</h5>
+            <p>We value your time and always arrive when promised, completing moves efficiently without sacrificing care.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="about-img fade-in">
+          <img src="images/MovingTeam.png" alt="Moving Team">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="process" class="process-section">
+  <div class="container">
+    <h2 class="section-title">How It <span>Works</span></h2>
+    <p class="section-subtitle">Our simple process makes moving stress-free from start to finish.</p>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="process-item fade-in">
+          <div class="process-number">1</div>
+          <h5>Get a Quote</h5>
+          <p>Contact us for a free, no-obligation quote tailored to your specific moving needs.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="process-item fade-in">
+          <div class="process-number">2</div>
+          <h5>Book Your Move</h5>
+          <p>Choose your preferred date and time, and we'll confirm your booking right away.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="process-item fade-in">
+          <div class="process-number">3</div>
+          <h5>We Pack & Load</h5>
+          <p>Our professional team will carefully pack, label, and load all your belongings.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="process-item fade-in">
+          <div class="process-number">4</div>
+          <h5>We Deliver & Unload</h5>
+          <p>We'll transport everything to your new location and unload according to your instructions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonial-section">
+  <div class="container">
+    <h2 class="section-title">Client <span>Testimonials</span></h2>
+    <p class="section-subtitle">Don't just take our word for it. Here's what our happy clients have to say:</p>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-content">
+            "Let's Get Moving made our relocation absolutely seamless! The crew was professional, careful with our belongings, and incredibly efficient. I couldn't recommend them more highly."
+          </div>
+          <div class="testimonial-author">
+
+            <div class="testimonial-name">
+              <strong>Sarah Johnson</strong>
+              <span>Local Move</span>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-content">
+            "As a business owner, I needed a moving company that understood the importance of minimizing downtime. Let's Get Moving delivered beyond my expectations, moving our entire office over a weekend."
+          </div>
+          <div class="testimonial-author">
+
+            <div class="testimonial-name">
+              <strong>Michael Rodriguez</strong>
+              <span>Commercial Move</span>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-content">
+            "I was worried about my long-distance move from Tucson to Denver, but Let's Get Moving took care of everything. My furniture arrived in perfect condition, and they even helped set up my new place!"
+          </div>
+          <div class="testimonial-author">
+
+            <div class="testimonial-name">
+              <strong>Jennifer Lewis</strong>
+              <span>Long Distance Move</span>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Ready for a Stress-Free Move?</h2>
+    <p>Contact us today to schedule your free consultation and quote. Let us handle the heavy lifting while you focus on your new beginning.</p>
+    <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact <span>Us</span></h2>
+    <p class="section-subtitle">Have questions or ready to book your move? We're here to help!</p>
+
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="contact-info mb-4">
+
+        </div>
+
+        <div class="contact-info d-flex align-items-center mb-4">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h5 class="mb-0 mb-0.5">Coverage</h5>
+
+            <p class="mb-0">Tucson & nearby cities: Oro Valley, Sahuarita, Vail, Oracle, Marana...</p>
+
+          </div>
+        </div>
+
+        <div class="contact-info d-flex align-items-center mb-4">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h5 class="mb-0">Phone</h5>
+            <p class="mb-0"><a href="tel:5202324722">(520) 232-4722</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info d-flex align-items-center mb-4">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h5 class="mb-0">Email</h5>
+            <p class="mb-0"><a href="mailto:tucsonletsgetmoving@gmail.com">tucsonletsgetmoving@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info d-flex align-items-center">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h5 class="mb-0">Business Hours</h5>
+            <p class="mb-0">Monday - Sunday: 7:00 AM - 9:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="contact-form">
+          <form id="contactForm">
+            <!-- Honeypot field for bots -->
+            <input type="text" name="website" id="website" style="display: none;">
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="pnumber" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="pnumber" name="pnumber" placeholder="(520) 555-1234" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="moveDate" class="form-label">Preferred Move Date</label>
+                <input type="date" class="form-control" id="moveDate" name="moveDate" required>
+              </div>
+              <div class="col-12 mb-3">
+                <label for="message" class="form-label">Move Details</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your move..." required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Get My Free Quote</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <img src="images/greenLogo.png " alt="Let's Get Moving Logo" height="55" class="mb-2">
+        <p class="footer-text ">Tucson's most trusted moving company for residential and commercial relocations. Licensed, insured, and dedicated to excellence.</p>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-title">Services</h5>
+        <a href="#services" class="footer-link">Local Moving</a>
+        <a href="#services" class="footer-link">Long Distance Moving</a>
+        <a href="#services" class="footer-link">Commercial Moving</a>
+        <a href="#services" class="footer-link">Safe Moving</a>
+        <a href="#services" class="footer-link">Loading & Unloading</a>
+        <a href="#services" class="footer-link">Storage Solutions</a>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-title">Company</h5>
+        <a href="#" class="footer-link">About Us</a>
+        <a href="#why-us" class="footer-link">Why Choose Us</a>
+        <a href="#process" class="footer-link">How It Works</a>
+        <a href="#testimonials" class="footer-link">Testimonials</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title">Contact Info</h5>
+        <div class="footer-contact">
+          <i class="fas fa-phone-alt"></i>
+          <span>(520) 232-4722</span>
+        </div>
+        <div class="footer-contact">
+          <i class="fas fa-envelope"></i>
+          <span>tucsonletsgetmoving@gmail.com</span>
+        </div>
+        <div class="footer-contact">
+          <i class="fas fa-clock"></i>
+          <span>Mon-Sun: 7:00 AM - 9:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2025 Let's Get Moving. All rights reserved. </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Call Button -->
+<a href="tel:5205551234" class="sticky-call">
+  <i class="fas fa-phone-alt"></i>
+</a>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Navbar Scroll Effect
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-shrink');
+    } else {
+      navbar.classList.remove('navbar-shrink');
+    }
+  });
+
+  // Fade In Animation
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const fadeInObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  fadeElements.forEach(element => {
+    fadeInObserver.observe(element);
+  });
+
+
+</script>
+<script>
+  const form = document.getElementById('contactForm');
+  const honeypot = document.getElementById('website');
+
+  form.name.addEventListener('input', () => {
+    form.name.value = form.name.value.replace(/[^a-zA-Z\s]/g, '');
+  });
+
+  form.pnumber.addEventListener('input', () => {
+    let digits = form.pnumber.value.replace(/\D/g, '').substring(0, 10);
+    form.pnumber.value = digits.replace(/(\d{3})(\d{3})(\d{0,4})/, (match, p1, p2, p3) => `${p1}-${p2}-${p3}`).replace(/-$/, '');
+  });
+
+  form.email.addEventListener('input', () => {
+    form.email.value = form.email.value.replace(/[^a-zA-Z0-9@._-]/g, '');
+  });
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const pnumber = form.pnumber.value.trim();
+    const message = form.message.value.trim();
+    const moveDate = document.getElementById('moveDate').value.trim();
+
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+
+    if (honeypot && honeypot.value !== '') {
+      alert("Bot blocked.");
+      return;
+    }
+
+    if (!name || !email || !pnumber || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      alert("Enter a valid email.");
+      return;
+    }
+
+    if (!phoneRegex.test(pnumber)) {
+      alert("Use XXX-XXX-XXXX format.");
+      return;
+    }
+
+    if (message.length < 10) {
+      alert("Message must be at least 10 characters.");
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:3000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, pnumber, message,moveDate })
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        showToast();
+        form.reset();
+      } else {
+        showErrorToast();
+      }
+    } catch (err) {
+      console.error("❌ Error sending message:", err);
+      showErrorToast();
+    }
+  });
+
+  function showToast() {
+    const toast = document.getElementById('formToast');
+    toast.style.display = 'flex';
+    setTimeout(() => {
+      toast.style.display = 'none';
+    }, 4000);
+  }
+
+  function showErrorToast() {
+    const toast = document.getElementById('formToastError');
+    toast.style.display = 'flex';
+    setTimeout(() => {
+      toast.style.display = 'none';
+    }, 5000);
+  }
+</script>
+
+<!-- Success Toast -->
+<div id="formToast" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999; display: none;">
+  <div class="toast align-items-center text-white bg-success border-0 show" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ Your message has been sent successfully!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" onclick="document.getElementById('formToast').style.display='none';"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Error Toast -->
+<div id="formToastError" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999; display: none;">
+  <div class="toast align-items-center text-white bg-danger border-0 show" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">
+        ❌ Something went wrong. Please try again later.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" onclick="document.getElementById('formToastError').style.display='none';"></button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
