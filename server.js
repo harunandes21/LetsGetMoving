@@ -3,6 +3,12 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use((req, res, next) => {
+    if (req.url.endsWith('.xml')) {
+        res.type('application/xml');
+    }
+    next();
+});
 
 app.use(cors());
 app.use(express.static('public'));
