@@ -1,10 +1,10 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const compression = require('compression');
-app.use(compression());
-
 const cors = require('cors');
+
 const app = express();
+app.use(compression());
 const PORT = process.env.PORT || 3000;
 app.use((req, res, next) => {
     if (req.url.endsWith('.xml')) {
