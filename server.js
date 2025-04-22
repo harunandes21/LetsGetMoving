@@ -20,8 +20,8 @@ app.post('/api/contact', async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'tucsonletsgetmoving@gmail.com',
-                pass: 'rsklyxddvscdiwol'
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
             }
         });
 
@@ -29,6 +29,7 @@ app.post('/api/contact', async (req, res) => {
             from: email,
             to: 'tucsonletsgetmoving@gmail.com',
             subject: `Let's Get Moving Contact Form - ${pnumber}`,
+            replyTo: email,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${pnumber}\n\nPreferred Move Date: ${moveDate} \nMessage:\n${message}`
         };
 
