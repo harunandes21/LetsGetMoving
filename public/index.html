@@ -1349,6 +1349,15 @@
                 <label for="message" class="form-label">Move Details</label>
                 <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your move..." required></textarea>
               </div>
+
+              <div class="col-12 mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="consentCheckbox" required>
+                  <label class="form-check-label" for="consentCheckbox">
+                    I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and consent to having my information sent via email.
+                  </label>
+                </div>
+              </div>
               <div class="col-12 text-center">
                 <button type="submit" class="btn btn-primary">Get My Free Quote</button>
               </div>
@@ -1385,6 +1394,7 @@
         <a href="#why-us" class="footer-link">Why Choose Us</a>
         <a href="#process" class="footer-link">How It Works</a>
         <a href="#testimonials" class="footer-link">Testimonials</a>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
       </div>
 
       <div class="col-lg-4 col-md-6">
@@ -1453,6 +1463,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
     const honeypot = document.getElementById('website');
+    const consentCheckbox = document.getElementById('consentCheckbox');
 
     if (!form) {
       console.error("❌ Form not found in DOM");
@@ -1509,6 +1520,12 @@
         return;
       }
 
+      // Consent checkbox validation
+      if (!consentCheckbox.checked) {
+        alert("Please agree to the Privacy Policy before submitting.");
+        return;
+      }
+
       try {
         const response = await fetch('/api/contact', {
           method: 'POST',
@@ -1527,6 +1544,7 @@
         console.error("❌ Error:", err);
         showErrorToast();
       }
+
       function showToast() {
         const toast = document.getElementById('formToast');
         toast.style.display = 'flex';
@@ -1546,6 +1564,7 @@
     });
   });
 </script>
+
 
 
 
